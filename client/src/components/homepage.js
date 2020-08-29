@@ -5,14 +5,19 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Carousel from 'react-bootstrap/Carousel';
 import logo from '../puppy1.jpg';
 import logo2 from '../puppy2.jpg';
-import logo3 from '../puppy3.jpg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 
 
 class HomePage extends Component {
   render() {
     return(
-      
-      <Carousel>
+
+      <Container fluid="lg">
+      <Row>
+        <Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -32,23 +37,22 @@ class HomePage extends Component {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={logo3}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</Row>
+      
+    </Container>
+
+      
+  
+  
+  
+
+      
+      
 //       <div style={{width: '100%', margin: 'auto'}}>
 //         <Grid className="landing-grid">
 //           <Cell col={12}>
