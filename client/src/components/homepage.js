@@ -1,53 +1,105 @@
+//Homepage
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Carousel from 'react-bootstrap/Carousel';
+import logo from '../puppy1.jpg';
+import logo2 from '../puppy2.jpg';
+import logo3 from '../puppy3.jpg';
 
 
 class HomePage extends Component {
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto'}}>
-        <Grid className="landing-grid">
-          <Cell col={12}>
-            <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-              alt="avatar"
-              className="avatar-img"
-              />
+      
+      <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={logo}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={logo2}
+      alt="Third slide"
+    />
 
-            <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={logo3}
+      alt="Third slide"
+    />
 
-            <hr/>
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+//       <div style={{width: '100%', margin: 'auto'}}>
+//         <Grid className="landing-grid">
+//           <Cell col={12}>
+//           <Jumbotron>
+//   <h1>Hello, world!</h1>
+//   <p>
+//     This is a simple hero unit, a simple jumbotron-style component for calling
+//     extra attention to featured content or information.
+//   </p>
 
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+// </Jumbotron>
+//             <img
+//               src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+//               alt="avatar"
+//               className="avatar-img"
+//               />
 
-        <div className="social-links">
+//             <div className="banner-text">
+//               <h1>Full Stack Web Developer</h1>
 
-          {/* LinkedIn */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
+//             <hr/>
 
-          {/* Github */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
+//           <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
 
-          {/* Freecodecamp */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-free-code-camp" aria-hidden="true" />
-          </a>
+//         <div className="social-links">
 
-          {/* Youtube */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
-          </a>
+//           {/* LinkedIn */}
+//           <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+//             <i className="fa fa-linkedin-square" aria-hidden="true" />
+//           </a>
 
-        </div>
-            </div>
-          </Cell>
-        </Grid>
-      </div>
+//           {/* Github */}
+//           <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+//             <i className="fa fa-github-square" aria-hidden="true" />
+//           </a>
+
+//           {/* Freecodecamp */}
+//           <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+//             <i className="fa fa-free-code-camp" aria-hidden="true" />
+//           </a>
+
+//           {/* Youtube */}
+//           <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+//             <i className="fa fa-youtube-square" aria-hidden="true" />
+//           </a>
+
+//         </div>
+//             </div>
+//           </Cell>
+//         </Grid>
+//       </div>
     )
   }
 }
