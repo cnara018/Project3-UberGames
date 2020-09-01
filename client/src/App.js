@@ -7,12 +7,14 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 class App extends Component {
   render() {
     return (
+
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">UberGames</Link>} scroll>
+        <Header className="header-color" style={{backgroundColor: 'black'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
                 <Link to="/login">Login</Link>
                 <Link to="/listings">Listings</Link>
