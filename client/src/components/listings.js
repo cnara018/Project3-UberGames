@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
 import Button from 'react-bootstrap/Button'
-
 import Jumbotron from 'react-bootstrap/Jumbotron'
-
-
-
+import Nav from 'react-bootstrap/Nav'
 
 
 class Listings extends Component {
@@ -17,48 +13,32 @@ class Listings extends Component {
 
       <div>
 
-      <Jumbotron style={{ textAlign: 'center' }}>
+        <Jumbotron style={{ textAlign: 'center' }}>
 
-        <h1>SHOP LISTINGS</h1>
-        <p>
-          This is a simple hero unit, a simple jumbotron-style component for calling
-          extra attention to featured content or information.
+          <h1>SHOP LISTINGS</h1>
+          <p>
+            Join the only community of gamers where buyers and sellers have an opportunity
+            to negotiate for a better price on any pre-owned merchandise related to gaming.
         </p>
-        <p>
-          <Button variant="primary">Learn more</Button>
-        </p>
-      </Jumbotron>
+          <p>
+            <Button variant="primary">Sell or Trade Listing</Button>
+          </p>
+        </Jumbotron>
 
-      <Container fluid>
-
-      <Container>
-  <Row>
-    <Col>1 of 2</Col>
-    <Col>2 of 2</Col>
-  </Row>
-  <Row>
-    <Col>1 of 3</Col>
-    <Col>2 of 3</Col>
-    <Col>3 of 3</Col>
-  </Row>
-</Container>
-
-        
-
-      </Container>
-
+        <Container fluid>
       
+              <Nav className="justify-content-center" activeKey="/home">
+                  <Nav.Item>
+                    <Nav.Link href="/home">Buy</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="link-1">Trade</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+            
+        </Container>
 
       </div>
-    
-
-
-
-
-
-
-
-
 
     )
   }

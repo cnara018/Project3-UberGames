@@ -1,50 +1,26 @@
 //Homepage
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Carousel from 'react-bootstrap/Carousel';
-import logo from '../puppy1.jpg';
-import logo2 from '../puppy2.jpg';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
+import Button from 'react-bootstrap/Button'
 
 
 class HomePage extends Component {
   render() {
     return(
 
-      <Container fluid="lg">
-      <Row>
-        <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={logo}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={logo2}
-      alt="Third slide"
-    />
+      <div>
+      <Jumbotron style={{ textAlign: 'center' }}>
 
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-</Row>
-      
-    </Container>
+          <h1>WELCOME TO UBERGAMES</h1>
+          <p>
+          A community of gamers aiming to build the greatest 
+          resource for buying and selling video games. </p>
+          <p>
+            <Button variant="primary">Browse listings</Button>
+          </p>
+        </Jumbotron>
+
+        </div>
 
       
   
