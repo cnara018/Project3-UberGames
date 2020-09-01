@@ -20,9 +20,9 @@ class Listings extends Component {
             Join the only community of gamers where buyers and sellers have an opportunity
             to negotiate for a better price on any pre-owned merchandise related to gaming.
         </p>
-          <p>
-            <Button variant="primary">Sell or Trade Listing</Button>
-          </p>
+          
+            <Button variant="primary"  href="/post">Sell or Trade Listing</Button>
+          
         </Jumbotron>
 
         <Container fluid>

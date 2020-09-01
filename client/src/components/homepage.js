@@ -16,7 +16,7 @@ class HomePage extends Component {
           A community of gamers aiming to build the greatest 
           resource for buying and selling video games. </p>
           <p>
-            <Button variant="primary">Browse listings</Button>
+            <Button variant="primary"  href="/listings">Browse listings</Button>
           </p>
         </Jumbotron>
 

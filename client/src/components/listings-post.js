@@ -22,8 +22,8 @@ class Post extends Component {
             to negotiate for a better price on any pre-owned merchandise related to gaming.
         </p>
 
-          <InputGroup className="mb-3">
-            <FormControl
+          <InputGroup className="mb-2">
+            <FormControl 
               placeholder="Search Games"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
