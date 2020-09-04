@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Card } from 'react-mdl';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
@@ -11,9 +11,10 @@ import Col from 'react-bootstrap/Col'
 class Login extends Component {
   render() {
     return (
-      <div>
+      <div style ={{margin: "auto", width: "50%",  padding: "10px"}}>
+      <Card style ={{margin: "auto", width: "50%",  padding: "10px"}}>
         <Form>
-          <h3>Sighn Up</h3>
+          <h3>Sign Up</h3>
           <Form.Row>
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Email</Form.Label>
@@ -51,7 +52,10 @@ class Login extends Component {
             Submit
           </Button>
         </Form>
-
+        </Card>
+      <br></br>
+      
+        <Card style = {{margin: "auto", width: "50%",  padding: "10px"}}>
         <Form>
           <h3>Login</h3>
           <Form.Group controlId="formBasicEmail">
@@ -73,7 +77,9 @@ class Login extends Component {
             Submit
           </Button>
         </Form>
+        </Card>
       </div>
+      
     )
   }
 }

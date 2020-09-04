@@ -19,7 +19,7 @@ const searchController = require("./controllers/search-controller.js");
 app.use(express.static("public"));
 
 app.use(postController);
-app.use(conditionController);
+app.use(conditionController);               
 app.use(viewController);
 app.use(searchController);
 
