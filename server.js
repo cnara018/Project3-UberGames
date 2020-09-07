@@ -1,6 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+// const speakeasy = require("speakeasy");
+// const qrcode = require("qrcode");
+const bcrypt = require('bcrypt')
 // Requiring our models for syncing
 var db = require("./models");
 const PORT = process.env.PORT || 3001;
@@ -12,16 +15,16 @@ app.use(bodyParser.json());
 
 // Routes
 // =============================================================
-const postController = require("./controllers/post-controller.js");
-const conditionController = require("./controllers/condition-controller.js");
-const viewController = require("./controllers/view-controller.js");
-const searchController = require("./controllers/search-controller.js");
+const postRoute = require("./routes/post-route.js");
+app.use("/api/posts" , postRoute);
+const profileRoutes = require("./routes/profile-route.js");
+app.use("/api/profiles", profileRoutes);
+const userRoutes = require("./routes/user-route");
+app.use("/api/users", userRoutes);
+
 app.use(express.static("public"));
 
-app.use(postController);
-app.use(conditionController);
-app.use(viewController);
-app.use(searchController);
+
 
 
 // Serve up static assets (usually on heroku)
