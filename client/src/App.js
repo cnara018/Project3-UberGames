@@ -31,7 +31,7 @@ class App extends Component {
         <Footer className="header-color" style={{backgroundColor: '#1C2C54'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
             
-                <Link to="/termsofservice" style={{textDecoration: 'none', color: 'white'}}>T.O.S.</Link>
+                <Link to="/termsofservice" style={{textDecoration: 'none', color: 'white' ,  margin: "auto" }}>Terms of Service &copy; 2020 </Link>
             </Navigation>
         </Footer>
 
