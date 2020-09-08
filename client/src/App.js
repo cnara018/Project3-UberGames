@@ -17,7 +17,7 @@ class App extends Component {
             <Navigation>
                 <Link to="/shop">Shop</Link>
                 <Link to="/trade">Trade</Link>
-                <Link to="/listings">Listings</Link>
+                <Link to="/listings">New Listings</Link>
                 <Link to="/profile">My Profile</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/signup">Sign up</Link>
