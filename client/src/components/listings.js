@@ -42,6 +42,8 @@ class Listings extends Component {
 
         <br></br>
 
+        <div className="container">
+
         <CardDeck>
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
@@ -129,6 +131,7 @@ class Listings extends Component {
     </Card.Footer>
   </Card>
 </CardDeck>
+</div>
 
       </div>
 
