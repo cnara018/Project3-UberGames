@@ -1,7 +1,7 @@
 //Navbar & Footer
 import React, { Component } from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Content } from 'react-mdl';
+import { Layout, Header, Navigation, Content, Footer } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,17 +16,26 @@ class App extends Component {
     <Layout>
         <Header className="header-color" style={{backgroundColor: 'black'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
+                <Link to="/shop">Shop</Link>
+                <Link to="/trade">Trade</Link>
                 <Link to="/listings">Listings</Link>
-                <Link to="/news">News</Link>
-                <Link to="/profile">Profile</Link>
+                <Link to="/profile">My Profile</Link>
                 <Link to="/login">Login</Link>
-                <Link to="/termsofservice">T.O.S.</Link>
+                <Link to="/signup">Sign up</Link>
             </Navigation>
         </Header>
         <Content>
             <div className="page-content" />
             <Main/>
         </Content>
+
+        <Footer className="header-color" style={{backgroundColor: 'gray'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
+            <Navigation>
+            
+                <Link to="/termsofservice">T.O.S.</Link>
+            </Navigation>
+        </Footer>
+
     </Layout>
 </div>
 
