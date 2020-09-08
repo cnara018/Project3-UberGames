@@ -14,7 +14,7 @@ class App extends Component {
 
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" style={{backgroundColor: 'black'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
+        <Header className="header-color" style={{backgroundColor: 'lightslategrey'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
                 <Link to="/shop">Shop</Link>
                 <Link to="/trade">Trade</Link>
