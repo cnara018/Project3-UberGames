@@ -5,7 +5,7 @@ import { Grid, Cell } from 'react-mdl';
 // import Skills from './skills';
 
 
-class News extends Component {
+class Signup extends Component {
   render() {
     return(
       <div>
@@ -15,4 +15,4 @@ class News extends Component {
   }
 }
 
-export default News;
+export default Signup;
