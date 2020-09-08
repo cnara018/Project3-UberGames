@@ -1,5 +1,9 @@
 module.exports = (sequelize, DataTypes) => {
     const Post = sequelize.define("Post", {
+        trade: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false
+        },
         price: {
             type: DataTypes.STRING,
             allowNull: false
@@ -8,11 +12,11 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        condition: {
+        platform: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        platform: {
+        condition: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -31,7 +35,12 @@ module.exports = (sequelize, DataTypes) => {
         esrbrating: {
             type: DataTypes.STRING,
             allowNull: false
-        }
+        ,
+        imageurl: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }}
+
     });
     Post.associate = models => {
         Post.belongsTo(models.User, {
