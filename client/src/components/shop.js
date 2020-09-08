@@ -21,22 +21,7 @@ class Shop extends Component {
             to negotiate for a better price on any pre-owned merchandise related to gaming.
         </p>
           
-            <Button variant="primary"  href="/post">Sell or Trade Listing</Button>
-          
         </Jumbotron>
-
-        <Container fluid>
-      
-              <Nav className="justify-content-center" activeKey="/home">
-                  <Nav.Item>
-                    <Nav.Link href="/home">Buy</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="link-1">Trade</Nav.Link>
-                  </Nav.Item>
-                </Nav>
-            
-        </Container>
 
       </div>
 
