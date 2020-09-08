@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+var request = require("request")
 // const speakeasy = require("speakeasy");
 // const qrcode = require("qrcode");
 const bcrypt = require('bcrypt')
