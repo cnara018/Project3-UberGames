@@ -8,13 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+
 class App extends Component {
   render() {
     return (
 
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" style={{backgroundColor: 'lightslategrey'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
+        <Header className="header-color" style={{backgroundColor: '#1C2C54'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
                 <Link to="/shop">Shop</Link>
                 <Link to="/trade">Trade</Link>
@@ -29,7 +30,7 @@ class App extends Component {
             <Main/>
         </Content>
 
-        <Footer className="header-color" style={{backgroundColor: 'gray'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
+        <Footer className="header-color" style={{backgroundColor: 'indigo'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
             
                 <Link to="/termsofservice">T.O.S.</Link>

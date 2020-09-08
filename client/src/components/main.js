@@ -12,6 +12,7 @@ import Shop from './shop';
 import Trade from './trade';
 
 
+
 const Main = () => (
   <Switch>
     <Route exact path="/" component={HomePage} />
