@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
-
 class App extends Component {
   render() {
     return (
@@ -19,7 +17,7 @@ class App extends Component {
             <Navigation>
                 <Link to="/shop">Shop</Link>
                 <Link to="/trade">Trade</Link>
-                <Link to="/listings">Listings</Link>
+                <Link to="/listings">New Listings</Link>
                 <Link to="/profile">My Profile</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/signup">Sign up</Link>
@@ -30,10 +28,10 @@ class App extends Component {
             <Main/>
         </Content>
 
-        <Footer className="header-color" style={{backgroundColor: 'indigo'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
+        <Footer className="header-color" style={{backgroundColor: '#1C2C54'}} title={<Link style={{textDecoration: 'none', color: 'white',}} to="/">UberGames</Link>} scroll>
             <Navigation>
             
-                <Link to="/termsofservice">T.O.S.</Link>
+                <Link to="/termsofservice" style={{textDecoration: 'none', color: 'white' ,  margin: "auto" }}>Terms of Service &copy; 2020 </Link>
             </Navigation>
         </Footer>
 
