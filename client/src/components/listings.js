@@ -20,8 +20,7 @@ class Listings extends Component {
 
           <h1>ADD LISTING</h1>
           <p>
-            Join the only community of gamers where buyers and sellers have an opportunity
-            to negotiate for a better price on any pre-owned merchandise related to gaming.
+            Got something you want to trade or sell? Tell us a bit about it. 
         </p>
         </Jumbotron>
 

@@ -20,8 +20,7 @@ class Shop extends Component {
 
           <h1>SHOP LISTINGS</h1>
           <p>
-            Join the only community of gamers where buyers and sellers have an opportunity
-            to negotiate for a better price on any pre-owned merchandise related to gaming.
+            Search far and wide for games you've been wanting to get your hands on.
         </p>
         </Jumbotron>
 
