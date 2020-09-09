@@ -15,7 +15,7 @@ class Trade extends Component {
 
           <h1>TRADE LISTINGS</h1>
           <p>
-            Got games to trade? This is the place you want to be.
+            Looking for some trade deals? This is the place you want to be.
         </p>
           
         </Jumbotron>
