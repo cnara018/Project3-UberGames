@@ -3,8 +3,10 @@ const router = express.Router();
 const db = require("../models");
 
 router.post('/new', (req, res) => {
+  console.log(req.body)
     db.User.create({
-        username: req.body.username
+        username: req.body.user.username, 
+        password: req.body.user.password
     }).then(newUser => res.send(newUser));
 });
 router.delete("/delete/:id", (req, res) => {
