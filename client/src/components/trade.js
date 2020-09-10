@@ -78,9 +78,7 @@ handleChange = event => {
         </Jumbotron>
 
         <div className="container">
-
-        <CardDeck>
-
+  <CardDeck>
   <Card>
     <Card.Img variant="top" src="https://www.mobygames.com/images/covers/l/172541-new-super-mario-bros-wii-wii-front-cover.jpg" alt="not image available"/>
     <Card.Body>
@@ -110,11 +108,7 @@ handleChange = event => {
     </Card.Text>
 
     <Card.Text>
-      Description: A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and 
-      images from local disk, such as the camera roll.This example shows fetching 
-      and displaying an image from local storage as well as one from network 
-      and even from data provided in the 'data:' uri scheme.
+      Description: 
 
     </Card.Text>
 
@@ -154,9 +148,7 @@ handleChange = event => {
     </Card.Text>
 
     <Card.Text>
-      Description:A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
-      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+      Description: 
     </Card.Text>
 
     {/* <Button variant="primary">Buy</Button> */}
@@ -195,9 +187,7 @@ handleChange = event => {
     </Card.Text>
 
     <Card.Text>
-      Description:A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
-      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+      Description:
     </Card.Text>
 
     {/* <Button variant="primary">Buy</Button> */}

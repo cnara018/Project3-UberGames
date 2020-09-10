@@ -36,105 +36,11 @@ class Profile extends Component {
        
       </Jumbotron>
 
-      <div className="container">
-      <InputGroup className="mb-2">
-          <FormControl 
-            placeholder="Search for your listings"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
+      
 
-          <InputGroup.Append>
-            <Button variant="outline-secondary">Search</Button>
-          </InputGroup.Append>
-        </InputGroup>
+  
 
-        </div>
-
-      <br></br>
-
-      <div className="container">
-
-      <CardDeck>
-<Card>
-  <Card.Img variant="top" src="holder.js/100px160" />
-<Card.Body>
-  <Card.Title>Game Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
-  </Card.Text>
-  <Button variant="primary">Edit my Listing</Button>
-</Card.Body>
-</Card>
-
-<Card>
-  <Card.Img variant="top" src="holder.js/100px160" />
-  <Card.Body>
-  <Card.Title>Game Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
-  </Card.Text>
-  <Button variant="primary">Edit my Listing</Button>
-</Card.Body>
-</Card>
-
-<Card>
-  <Card.Img variant="top" src="holder.js/100px160" />
-  <Card.Body>
-  <Card.Title>Game Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
-  </Card.Text>
-  <Button variant="primary">Edit my Listing</Button>
-</Card.Body>
-</Card>
-</CardDeck>
-
-<br></br>
-
-<CardDeck>
-<Card>
-  <Card.Img variant="top" src="holder.js/100px160" />
-  <Card.Body>
-  <Card.Title>Game Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
-  </Card.Text>
-  <Button variant="primary">Edit my Listing</Button>
-</Card.Body>
-</Card>
-
-<Card>
-  <Card.Img variant="top" src="holder.js/100px160" />
-  <Card.Body>
-  <Card.Title>Game Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
-  </Card.Text>
-  <Button variant="primary">Edit my Listing</Button>
-</Card.Body>
-</Card>
-
-<Card>
-  <Card.Img variant="top" src="holder.js/100px160" />
-  <Card.Body>
-  <Card.Title>Game Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
-  </Card.Text>
-  <Button variant="primary">Edit my Listing</Button>
-</Card.Body>
-</Card>
-
-</CardDeck>
-<br></br>
-</div>
+      
 
 </div>
 

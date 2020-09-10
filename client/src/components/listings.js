@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Button from 'react-bootstrap/Button'
 import axios from "axios";
 
 
@@ -163,28 +163,93 @@ class Listings extends Component {
             Got something you want to trade or sell? Tell us a bit about it.
         </p>
         </Jumbotron>
-        <div className="container">
+
+        <Container>
+  <Row>
+    <Col></Col>
+    
+    <Col xs={6}>
+    <div className="center">
+              <form onSubmit={this.handleSubmit}>
+              <label>
+                Person Name:
+                <br></br>
+                <br></br>
+                <input type="text" name="trade" value={this.state.trade} onChange={this.handleChange} placeholder="trade"/>
+                <br></br>
+                <input type="text" name="price" value={this.state.price} onChange={this.handleChange} placeholder="price"/>
+                <br></br>
+                <input type="text" name="conditionofgame" value={this.state.conditionofgame} onChange={this.handleChange} placeholder="conditionofgame"/>
+                <br></br>
+                <input type="text" name="gamedescription" value={this.state.gamedescription} onChange={this.handleChange} placeholder="gamedescription"/>
+                <br></br>
+                <input type="text" name="developer" value={this.state.developer} onChange={this.handleChange} placeholder="developer"/>
+                <br></br>
+                <input type="text" name="esrbrating" value={this.state.esrbrating} onChange={this.handleChange} placeholder="esrbrating"/>
+                <br></br>
+                <input type="text" name="genre" value={this.state.genre} onChange={this.handleChange} placeholder="genre"/>
+                <br></br>
+                <input type="text" name="platform" value={this.state.platform} onChange={this.handleChange} placeholder="platform"/>
+                <br></br>
+                <input type="text" name="gamename" value={this.state.gamename} onChange={this.handleChange} placeholder="gamename"/>
+                <br></br>
+                <input type="text" name="imageurl" value={this.state.imageurl} onChange={this.handleChange} placeholder="imageurl"/>
+                <br></br>
+                <input type="text" name="UserId" value={this.state.UserId} onChange={this.handleChange}/>
+              </label>
+              <br></br>
+              <button type="submit">Add</button>
+            </form>
+            </div>
+
+            </Col>
+
+    <Col></Col>
+
+  </Row>
+  </Container>
+        
+        {/* <div className="container">
           <div className="center">
             <form onSubmit={this.handleSubmit}>
               <label>
                 Person Name:
-              <input type="text" name="trade" value={this.state.trade} onChange={this.handleChange} placeholder="trade"/>
+                <br></br>
+                <input type="text" name="trade" value={this.state.trade} onChange={this.handleChange} placeholder="trade"/>
+                <br></br>
                 <input type="text" name="price" value={this.state.price} onChange={this.handleChange} placeholder="price"/>
+                <br></br>
                 <input type="text" name="conditionofgame" value={this.state.conditionofgame} onChange={this.handleChange} placeholder="conditionofgame"/>
+                <br></br>
                 <input type="text" name="gamedescription" value={this.state.gamedescription} onChange={this.handleChange} placeholder="gamedescription"/>
+                <br></br>
                 <input type="text" name="developer" value={this.state.developer} onChange={this.handleChange} placeholder="developer"/>
+                <br></br>
                 <input type="text" name="esrbrating" value={this.state.esrbrating} onChange={this.handleChange} placeholder="esrbrating"/>
+                <br></br>
                 <input type="text" name="genre" value={this.state.genre} onChange={this.handleChange} placeholder="genre"/>
+                <br></br>
                 <input type="text" name="platform" value={this.state.platform} onChange={this.handleChange} placeholder="platform"/>
+                <br></br>
                 <input type="text" name="gamename" value={this.state.gamename} onChange={this.handleChange} placeholder="gamename"/>
+                <br></br>
                 <input type="text" name="imageurl" value={this.state.imageurl} onChange={this.handleChange} placeholder="imageurl"/>
+                <br></br>
                 <input type="text" name="UserId" value={this.state.UserId} onChange={this.handleChange}/>
               </label>
+              <br></br>
               <button type="submit">Add</button>
             </form>
           </div>
-        </div>
+        </div> */}
+        <br></br>
+        <br></br>
       </div>
+
+
+
+
+
     )
   }
 }
