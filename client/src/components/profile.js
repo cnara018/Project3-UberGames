@@ -11,6 +11,7 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
 
+
 class Profile extends Component {
   render() {
     return(
@@ -38,7 +39,7 @@ class Profile extends Component {
       <div className="container">
       <InputGroup className="mb-2">
           <FormControl 
-            placeholder="Search Games"
+            placeholder="Search for your listings"
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           />
