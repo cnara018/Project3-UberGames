@@ -65,7 +65,7 @@ class Shop extends Component {
 
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -106,7 +106,7 @@ class Shop extends Component {
       This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -147,7 +147,7 @@ class Shop extends Component {
       This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
