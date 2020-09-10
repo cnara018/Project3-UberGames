@@ -20,9 +20,9 @@ class HomePage extends Component {
         <Jumbotron fluid ID="main" style={{ textAlign: 'center' }}>
 
           <h2 style={{ color: "white" }}>WELCOME TO UBERGAMES</h2>
-          <p style={{ color: "white" }}>
+          <h6 style={{ color: "white" }}>
             A community of gamers aiming to build the greatest
-          resource for buying and selling video games. </p>
+          resource for buying and selling video games. </h6>
 
         </Jumbotron>
 

@@ -159,9 +159,9 @@ class Listings extends Component {
       <div>
         <Jumbotron style={{ textAlign: 'center', backgroundColor: 'transparent' }}>
           <h1>ADD LISTING</h1>
-          <p>
+          <h6>
             Got something you want to trade or sell? Tell us a bit about it.
-        </p>
+        </h6>
         </Jumbotron>
 
         <Container>

@@ -71,9 +71,9 @@ handleChange = event => {
         <Jumbotron style={{ textAlign: 'center', backgroundColor: 'transparent'}}>
 
           <h1>TRADE LISTINGS</h1>
-          <p>
+          <h6>
             Looking for some trade deals? This is the place you want to be.
-        </p>
+        </h6>
           
         </Jumbotron>
 

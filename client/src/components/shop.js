@@ -16,9 +16,9 @@ class Shop extends Component {
         <Jumbotron style={{ textAlign: 'center', backgroundColor: 'transparent'}}>
 
           <h1>SHOP LISTINGS</h1>
-          <p>
+          <h6>
             Search far and wide for games you've been wanting to get your hands on.
-        </p>
+        </h6>
         </Jumbotron>
 
         <div className="container">
