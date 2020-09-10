@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     const Post = sequelize.define("Post", {
         trade: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
             allowNull: false
         },
         price: {
@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        condition: {
+        conditionofgame: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -35,11 +35,11 @@ module.exports = (sequelize, DataTypes) => {
         esrbrating: {
             type: DataTypes.STRING,
             allowNull: false
-        ,
+        },
         imageurl: {
             type: DataTypes.STRING,
             allowNull: false
-        }}
+        }
 
     });
     Post.associate = models => {
