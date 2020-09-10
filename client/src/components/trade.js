@@ -80,15 +80,45 @@ handleChange = event => {
         <div className="container">
 
         <CardDeck>
+
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src="https://www.mobygames.com/images/covers/l/172541-new-super-mario-bros-wii-wii-front-cover.jpg" alt="not image available"/>
     <Card.Body>
-    <Card.Title>Game Title</Card.Title>
+    <Card.Title> Game Name</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+    Genre:
     </Card.Text>
-    <Button variant="primary">Trade</Button>
+
+    <Card.Text>
+    Platform:
+    </Card.Text>
+
+    <Card.Text>
+    Developer:
+    </Card.Text>
+
+    <Card.Text>
+    Esrb rating:
+    </Card.Text>
+
+    <Card.Text>
+    Price:
+    </Card.Text>
+
+    <Card.Text>
+    Condition: 
+    </Card.Text>
+
+    <Card.Text>
+      Description: A React component for displaying different types of images, 
+      including network images, static resources, temporary local images, and 
+      images from local disk, such as the camera roll.This example shows fetching 
+      and displaying an image from local storage as well as one from network 
+      and even from data provided in the 'data:' uri scheme.
+
+    </Card.Text>
+
+    <Button variant="primary">Buy</Button>
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -96,133 +126,90 @@ handleChange = event => {
   </Card>
 
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src="https://vignette.wikia.nocookie.net/videogamehistory/images/7/7d/SuperMarioBrosWii.png/revision/latest?cb=20091202214104" alt="not image available"/>
     <Card.Body>
-    <Card.Title>Game Title</Card.Title>
+    <Card.Title> Game Name</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+    Genre:
     </Card.Text>
-    <Button variant="primary">Trade</Button>
+
+    <Card.Text>
+    Platform:
+    </Card.Text>
+
+    <Card.Text>
+    Developer:
+    </Card.Text>
+
+    <Card.Text>
+    Esrb rating:
+    </Card.Text>
+
+    <Card.Text>
+    Price
+    </Card.Text>
+
+    <Card.Text>
+    Condition 
+    </Card.Text>
+
+    <Card.Text>
+      Description:A React component for displaying different types of images, 
+      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
+      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+    </Card.Text>
+
+    <Button variant="primary">Buy</Button>
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
     </Card.Footer>
   </Card>
+
+  <Card>
+    <Card.Img variant="top" src="https://images.nintendolife.com/games/wiiu/new_super_mario_bros_u/cover_large.jpg" alt="not image available"/>
+    <Card.Body>
+    <Card.Title> Game Name</Card.Title>
+    <Card.Text>
+    Genre:
+    </Card.Text>
+
+    <Card.Text>
+    Platform:
+    </Card.Text>
+
+    <Card.Text>
+    Developer:
+    </Card.Text>
+
+    <Card.Text>
+    Esrb rating:
+    </Card.Text>
+
+    <Card.Text>
+    Price:
+    </Card.Text>
+
+    <Card.Text>
+    Condition: 
+    </Card.Text>
+
+    <Card.Text>
+      Description:A React component for displaying different types of images, 
+      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
+      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+    </Card.Text>
+
+    <Button variant="primary">Buy</Button>
+  </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+
   
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
 </CardDeck>
 
-<br></br>
-
-<CardDeck>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
-
-<br></br>
-
-<CardDeck>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-    <Card.Title>Game Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Trade</Button>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
   </div>
 
       </div>

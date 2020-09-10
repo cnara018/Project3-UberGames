@@ -22,6 +22,8 @@ class HomePage extends Component {
           
         </Jumbotron>
 
+      
+
         <CardGroup>
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
