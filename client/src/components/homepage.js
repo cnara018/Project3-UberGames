@@ -3,59 +3,55 @@ import React, { Component } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Carousel from 'react-bootstrap/Carousel'
+import CardDeck from 'react-bootstrap/CardDeck'
+import Container from 'react-bootstrap/Container'
 
 
 class HomePage extends Component {
   render() {
     return (
+
+
       <div>
-        <Jumbotron style={{ textAlign: 'center', fontFamily: '-moz-initial' }}>
-          <h2>WELCOME TO UBERGAMES</h2>
-          <p>A community of gamers aiming to build the greatest resource for buying and selling video games. </p>
+
+        <Jumbotron fluid ID="main" style={{ textAlign: 'center' }}>
+
+          <h2 style={{ color: "white" }}>WELCOME TO UBERGAMES</h2>
+          <h6 style={{ color: "white" }}>
+            A community of gamers aiming to build the greatest
+          resource for buying and selling video games. </h6>
+
         </Jumbotron>
 
-        <CardGroup>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
+<Container fluid>
+
+        <CardDeck>
+
+          <Card className="bg-dark text-white">
+            <Card.Img src="https://cdn.mos.cms.futurecdn.net/MMwRCjVEaoJPP4dBBugWFY.jpg" alt="Card image" />
+            <Card.ImgOverlay>
+            <Card.Title>Card title</Card.Title>
+            </Card.ImgOverlay>
           </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
+
+          <Card className="bg-dark text-white">
+            <Card.Img src="https://i.pcmag.com/imagery/lineups/06PiprC5eiYhlpaNS6N0sbP-1.1569492872.fit_lim.size_1200x630.jpg" alt="Card image" />
+            <Card.ImgOverlay>
               <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to additional content.{' '}
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
+            </Card.ImgOverlay>
           </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This card has even longer content than the first to
-                show that equal height action.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
+
+          <Card className="bg-dark text-white">
+            <Card.Img src="https://fullsync.co.uk/wp-content/uploads/2020/03/Video-game-Controllers.jpg" alt="Card image" />
+            <Card.ImgOverlay>
+            <Card.Title>Card title</Card.Title>
+            </Card.ImgOverlay>
           </Card>
-        </CardGroup>
-     </div>
+
+        </CardDeck>
+      </Container>
+      </div>
     )
   }
 }

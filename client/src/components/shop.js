@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Card from 'react-bootstrap/Card'
@@ -19,9 +16,9 @@ class Shop extends Component {
         <Jumbotron style={{ textAlign: 'center', backgroundColor: 'transparent'}}>
 
           <h1>SHOP LISTINGS</h1>
-          <p>
+          <h6>
             Search far and wide for games you've been wanting to get your hands on.
-        </p>
+        </h6>
         </Jumbotron>
 
         <div className="container">
@@ -57,15 +54,11 @@ class Shop extends Component {
     </Card.Text>
 
     <Card.Text>
-      Description: A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and 
-      images from local disk, such as the camera roll.This example shows fetching 
-      and displaying an image from local storage as well as one from network 
-      and even from data provided in the 'data:' uri scheme.
+      Description: 
 
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -101,12 +94,10 @@ class Shop extends Component {
     </Card.Text>
 
     <Card.Text>
-      Description:A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
-      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+      Description:
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -142,12 +133,10 @@ class Shop extends Component {
     </Card.Text>
 
     <Card.Text>
-      Description:A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
-      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+      Description:
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>

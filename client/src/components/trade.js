@@ -71,16 +71,14 @@ handleChange = event => {
         <Jumbotron style={{ textAlign: 'center', backgroundColor: 'transparent'}}>
 
           <h1>TRADE LISTINGS</h1>
-          <p>
+          <h6>
             Looking for some trade deals? This is the place you want to be.
-        </p>
+        </h6>
           
         </Jumbotron>
 
         <div className="container">
-
-        <CardDeck>
-
+  <CardDeck>
   <Card>
     <Card.Img variant="top" src="https://www.mobygames.com/images/covers/l/172541-new-super-mario-bros-wii-wii-front-cover.jpg" alt="not image available"/>
     <Card.Body>
@@ -110,15 +108,11 @@ handleChange = event => {
     </Card.Text>
 
     <Card.Text>
-      Description: A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and 
-      images from local disk, such as the camera roll.This example shows fetching 
-      and displaying an image from local storage as well as one from network 
-      and even from data provided in the 'data:' uri scheme.
+      Description: 
 
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -154,12 +148,10 @@ handleChange = event => {
     </Card.Text>
 
     <Card.Text>
-      Description:A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
-      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+      Description: 
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
@@ -195,12 +187,10 @@ handleChange = event => {
     </Card.Text>
 
     <Card.Text>
-      Description:A React component for displaying different types of images, 
-      including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
-      This example shows fetching and displaying an image from local storage as well as one from network and even from data provided in the 'data:' uri scheme.
+      Description:
     </Card.Text>
 
-    <Button variant="primary">Buy</Button>
+    {/* <Button variant="primary">Buy</Button> */}
   </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
