@@ -1,55 +1,63 @@
-module.exports = (sequelize, DataTypes) => {
-    const Post = sequelize.define("Post", {
-        trade: {
-            type: DataTypes.BOOLEAN,
-            allowNull: false
-        },
-        price: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        gamename: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        platform: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        condition: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        developer: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        gamedescription: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        genre: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        esrbrating: {
-            type: DataTypes.STRING,
-            allowNull: false
-        ,
-        imageurl: {
-            type: DataTypes.STRING,
-            allowNull: false
-        }}
+const mongoose = require('mongoose');
 
-    });
-    Post.associate = models => {
-        Post.belongsTo(models.User, {
-            foreignKey: {
-                allowNull: false,
-                onDetele: "cascade"
-   
-            }
-        });
-    };
-    return Post;
-};
+const Schema = mongoose.Schema;
+//Create Schema
+
+const PostSchema = new  Schema({
+    posttitle: {
+        type: String,
+        required: true
+    },
+    condition: {
+        type: String,
+        required: true
+    },
+    genre: {
+        type: String,
+        required: true
+    },
+    developer: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    image:{
+        type: String,
+        required: true
+    },
+    price:{
+        type: String,
+        required: true
+    },
+    priceUnit:{
+        type: String,
+        required: true
+    },
+    contact:{
+        type: String,
+        required: true
+    },
+    email:{
+        type: String,
+        required: true
+    },
+    esrb:{
+        type: String,
+        required: true
+    },
+    platform:{
+        type: String,
+        required: false
+    },
+    
+    date: {
+        type: Date,
+        default: Date.now
+    }
+
+});
+
+module.exports = Users = mongoose.model('posts', PostSchema);

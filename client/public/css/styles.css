@@ -373,7 +373,7 @@ h1 {
   display: block;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-duration: 2s;
-  transition-property: transform, opacity;
+  transition-post: transform, opacity;
 }
 
 .flip>.front {

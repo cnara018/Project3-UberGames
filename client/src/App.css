@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import "components/FooterComponent/footer.css";
+@import "components/HeaderComponent/header.css";
+@import "components/HomeComponent/homePage.css";
+@import "components/PostComponent/postComponent.css";
+@import "components/ListPostsComponent/list-posts.css";
+@import "components/LoadingComponent/loadingSpinner.css";
+@import "components/PostDetailComponent/postDetail.css";
+
 
 .App {
   text-align: center;
@@ -13,7 +21,7 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .App-intro {
@@ -29,5 +37,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#main {
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/34/47/abstract-hexagon-digital-technology-background-vector-16943447.jpg");
+  
+}
 
 

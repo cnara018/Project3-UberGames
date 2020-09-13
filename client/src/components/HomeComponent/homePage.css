@@ -1,0 +1,19 @@
+.home-title{
+    font-size: 3.5vw;
+}
+.home-subtitle{
+    font-size: 2.5vw;
+}
+
+.bg-transparent{
+    background-color: white;
+
+}
+@media only screen and (max-width: 768px) {
+    .home-title{
+        font-size: 4vw;
+    }
+    .home-subtitle{
+        font-size: 3vw;
+    }
+}
