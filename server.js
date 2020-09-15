@@ -65,8 +65,9 @@ const port = process.env.PORT || 5000;
 //Set Storage
 app.use(cors());
 
-app.use(express.static(publicDirectory));
-app.use(express.static('./public'));
+//app.use(express.static(publicDirectory));
+//app.use(express.static('./public'));
+app.use(express.static('client/build'));
 
 //Handles Express Sessions
 app.use(session({
