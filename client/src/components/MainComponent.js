@@ -9,6 +9,7 @@ import AdminDashboard from './AdminDashboardComponent/AdminDashboardComponent';
 import UserDashboard from './UserDashboardComponent/UserDashboardComponent';
 import AddPostComponent from "./AddPostComponent/AddPostComponent";
 import PostDetail from './PostDetailComponent/PostDetailComponent';
+import TermsOfService from './termsofservice';
 import { loginUser, logoutUser, registerUser } from "../redux/actions/authActions";
 import { Link } from 'react-router-dom';
 import PrivateRoute from '../routes/PrivateRoute';
@@ -102,7 +103,13 @@ class Main extends Component {
                         sendEmailToOwner={this.props.sendEmailToOwner}
                     />}
                     />
+                    
+                    <Route exact path="/termsofservice" component={()=> <TermsOfService/>}
+                    />
+                    
                     <Redirect to="/"/>
+                    
+
                 </Switch>
                 <Footer/>
             </div>
