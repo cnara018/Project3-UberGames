@@ -53,7 +53,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const users = require('./routes/api/users');
 const uploads = require('./routes/api/uploads');
-const post = require('./routes/api/post');
+const posts = require('./routes/api/posts');
 const session = require('express-session');
 const cors = require('cors');
 const passport = require("passport");
@@ -86,7 +86,7 @@ app.use(passport.session());
 //Using Routes
 app.use('/api/users', users);
 app.use('/api/uploads',uploads);
-app.use('/api/post',post);
+app.use('/api/post',posts);
 
 //DB CONFIG
 const db = require('./config/keys').mongoURI;
