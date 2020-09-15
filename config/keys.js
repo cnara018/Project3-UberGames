@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI: 'mongodb://localhost:27017/ubergames',
+  mongoURI: process.env.MONGODB_URI || 'mongodb://localhost/ubergames',
   secretOrKey: "secret"
 };
