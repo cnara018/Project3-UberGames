@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Layout, Navigation, Content, Footer } from 'react-mdl';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConfigureStore } from "./redux/store/configureStore";

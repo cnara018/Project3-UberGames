@@ -3,7 +3,7 @@ import * as ActionTypes from "./types";
 import {getCurrentUser} from "./authActions";
 
 export const addPost = (newPost) => dispatch => {
-    axios.post("http://localhost:5000/api/uploads/post",newPost)
+    axios.post("/api/uploads/post",newPost)
         .then((response) => {
 
             dispatch(addNewPost(response.data));
@@ -15,7 +15,7 @@ export const addPost = (newPost) => dispatch => {
 export const fetchPosts = ()=>dispatch =>{
     dispatch(postsLoading(true));
     dispatch(getCurrentUser());
-    axios.get("http://localhost:5000/api/post/all")
+    axios.get("/api/post/all")
         .then((response) => {
             dispatch(addPosts(response.data));
         }).catch((error) => {
@@ -44,7 +44,7 @@ export const addPosts=(posts)=>({
 export const fetchRecentPosts = ()=> dispatch =>{
     dispatch(recentPostsLoading(true));
     dispatch(getCurrentUser());
-    axios.get("http://localhost:5000/api/post/recent")
+    axios.get("/api/post/recent")
         .then((response) => {
             dispatch(addRecentPosts(response.data));
         }).catch((error) => {
@@ -72,7 +72,7 @@ export const addImageToServer= ( image ) => dispatch =>{
             'content-type': 'multipart/form-data'
         }
     };
-    axios.post("http://localhost:5000/api/uploads/image",image,config)
+    axios.post("/api/uploads/image",image,config)
         .then((response) => {
             console.log('Images Uploaded')
         }).catch((error) => {
@@ -80,7 +80,7 @@ export const addImageToServer= ( image ) => dispatch =>{
 };
 
 export const sendEmailToOwner = (data)=> dispatch =>{
-    axios.post("http://localhost:5000/api/post/contact",data)
+    axios.post("/api/post/contact",data)
         .then((response) => {
             alert('Email Sent :D');
         }).catch((error) => {
@@ -90,7 +90,7 @@ export const sendEmailToOwner = (data)=> dispatch =>{
 export const fetchMyPosts = (email)=> dispatch => {
     dispatch(myPostsLoading(true));
     axios
-        .get(`http://localhost:5000/api/post/my/${email}`)
+        .get(`/api/post/my/${email}`)
         .then(res => {
             if (res.status === 200){
                 dispatch(addMyPosts(res.data));
@@ -103,7 +103,7 @@ export const fetchMyPosts = (email)=> dispatch => {
 };
 export const removePost=(id)=>dispatch=>{
     axios
-        .delete(`http://localhost:5000/api/post/my/delete/${id}`)
+        .delete(`/api/post/my/delete/${id}`)
         .then(res => {
             if (res.status === 200){
                 dispatch(removeMyPost(id));

@@ -8,7 +8,7 @@ import {fetchMyPosts} from "./postActions";
 // Register User
 export const registerUser = (userData) => dispatch => {
     axios
-        .post("http://localhost:5000/api/users/register", userData)
+        .post("/api/users/register", userData)
         .then(res => alert('Registered Successfully')) // re-direct to login on successful register
         .catch(err =>
             alert('Email Already Exist')
@@ -18,7 +18,7 @@ export const registerUser = (userData) => dispatch => {
 export const loginUser = userData => dispatch => {
     console.log(userData);
     axios
-        .post("http://localhost:5000/api/users/login", userData)
+        .post("/api/users/login", userData)
         .then(res => {
 
             localStorage.setItem("user",JSON.stringify(res.data) );
@@ -59,7 +59,7 @@ export const logoutUser = () => dispatch => {
 
 
     axios
-        .get("http://localhost:5000/api/users/logout")
+        .get("/api/users/logout")
         .then(res => {
             if (res.status === 200){
                 dispatch(setCurrentUser({}));

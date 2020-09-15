@@ -1,12 +1,8 @@
-import React, {Component, Fragment} from 'react';
-import {Link} from "react-router-dom";
+import React, {Component} from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import Carousel from 'react-bootstrap/Carousel'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Container from 'react-bootstrap/Container'
-import PostComponent from '../PostComponent/PostComponent';
 import axios from "axios";
 
 
@@ -26,7 +22,7 @@ class Home extends Component {
         }
     }
     componentWillMount() {
-        axios.get("http://localhost:5000/api/post/count/Playstation")
+        axios.get("/api/post/count/Playstation")
             .then((response) => {
                 this.setState({
                     city:{
@@ -38,7 +34,7 @@ class Home extends Component {
                 })
             }).catch((error) => {
         });
-        axios.get("http://localhost:5000/api/post/count/Xbox")
+        axios.get("/api/post/count/Xbox")
             .then((response) => {
                 this.setState({
                     city:{
@@ -50,7 +46,7 @@ class Home extends Component {
                 })
             }).catch((error) => {
         });
-        axios.get("http://localhost:5000/api/post/count/condition/New")
+        axios.get("/api/post/count/condition/New")
             .then((response) => {
                 this.setState({
                     for:{
@@ -62,7 +58,7 @@ class Home extends Component {
                 })
             }).catch((error) => {
         });
-        axios.get("http://localhost:5000/api/post/count/condition/Used")
+        axios.get("/api/post/count/condition/Used")
             .then((response) => {
                 this.setState({
                     for:{

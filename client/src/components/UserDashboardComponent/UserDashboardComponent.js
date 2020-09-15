@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
 import {Loading} from "../LoadingComponent/LoadingComponent";
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Moment from 'react-moment';
 import {Button} from "reactstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'

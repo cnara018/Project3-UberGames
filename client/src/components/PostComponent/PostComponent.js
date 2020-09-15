@@ -1,9 +1,7 @@
 import React from 'react';
 import { Loading } from '../LoadingComponent/LoadingComponent';
-import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card'
-import CardDeck from 'react-bootstrap/CardDeck'
 
 const PostComponent = ({posts, isLoading, errMess})=>{
     if(isLoading){
